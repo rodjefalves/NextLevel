@@ -15,6 +15,7 @@ import javax.persistence.*;
 public class Usuario {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "usuario_sequence")
     private Integer id;
 
     @Column
@@ -22,8 +23,5 @@ public class Usuario {
 
     @Column
     private String senha;
-
-    @Column
-    private boolean admin;
 
 }
