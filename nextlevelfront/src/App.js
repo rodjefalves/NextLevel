@@ -5,7 +5,7 @@ import Home from './pages/home/index';
 function App() {
   return (
     <div className="App">
-      {/* <Login/> */}
+        <Login/>
       <Home/>
     </div>
   );
