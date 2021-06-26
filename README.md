@@ -34,7 +34,7 @@ A arquitetura é simples, consiste em um frontend em React e um back em SpringBo
 
 #### Endpoints das API's
 
-![Endpoints]("https://raw.githubusercontent.com/rodjefalves/NextLevel/main/img/endpoints.png")
+![Endpoints](https://raw.githubusercontent.com/rodjefalves/NextLevel/main/img/endpoints.png)
 
 ### Tecnologias utilizadas:
 
