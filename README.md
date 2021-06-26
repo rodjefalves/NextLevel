@@ -8,10 +8,6 @@ Baseado no slogan da empresa: **"It's time to raise the bar"**, batizei a aplica
 
 ## Detalhes técnicos
 
-### Requisitos:
-
-Elaborei esse documento simplificando de especificação de requisitos para facilitar o planejamento e 
-
 ### Arquitetura:
 
 ![Arquitetura](URL da imagem)
@@ -22,35 +18,23 @@ A arquitetura é simples, consiste em um frontend em React e um back em SpringBo
 
 #### Front-end
 
-![Diretórios do Front](URL da imagem)
-
 - **Components:** diretório dos pequenos componentes que integram as páginas;
 - **Pages:** diretório reservados a estrutura de páginas que receberam os componentes;
-- **Routes:** diretório onde se localiza a estrutura de rotas da aplicação web.
+
 
 #### Back-end
 
-![Diretórios do Back](URL da imagem)
-
-- **Components:** diretório dos pequenos componentes que integram as páginas;
-- **Pages:** diretório reservados a estrutura de páginas que receberam os componentes;
-- **Routes:** diretório onde se localiza a estrutura de rotas da aplicação web.
-
-#### As tabelas
-
-**Foram alimentadas com liquibase.**
-
-![Tabelas](URL da imagem)
-
-O usuário pré-cadastrado para autenticação possui as seguintes credenciais:
-
-**Login:** tony.stark
-**Senha:** ironman
-
-No banco de dados a senha é criptografada.
+- **Config:** aqui se localiza as configurações do security e do swagger;
+- **Entity:** diretório reservado para as entidades que fazem parte do back (Empresas, Profiles e Usuários);
+- **Exceptions:** aqui existem duas exceptions: profile não encontrado e senha inválida;
+- **Repository:** repositórios JPA das 3 entidades do back;
+- **Rest:** aqui encontra-se os controllers e DTO's utilizados nas requisições REST;
+- **Security:** configurações de autenticação e JWT;
+- **Service:** onde estão as poucas regras de negócio da aplicação.
 
 #### Endpoints das API's
 
+![Endpoints](URL da imagem)
 
 ### Tecnologias utilizadas:
 
@@ -67,10 +51,10 @@ No banco de dados a senha é criptografada.
 
 O cronograma abaixo foi definido no primeiro dia do desafio.
 
-22/06 - Briefing e planejamento do sistema;
-23/06 - Desenvolvimento do "back";
-24/06 - Desenvolvimento do front;
-25/06 - Entrega da solução e relatório (este documento).
+- 22/06 - Briefing e planejamento do sistema;
+- 23/06 - Desenvolvimento do "back";
+- 24/06 - Desenvolvimento do front;
+- 25/06 - Entrega da solução e relatório (este documento).
 
 
 ## Problemas encontrados e observações:
@@ -81,6 +65,11 @@ O cronograma abaixo foi definido no primeiro dia do desafio.
 
 ## Como Executar?
 
+O usuário pré-cadastrado para autenticação possui as seguintes credenciais:
+
+**Login:** tony.stark
+**Senha:** ironman
+
 ### BackEnd:
 
 - No diretório raíz da aplicação.
@@ -88,6 +77,14 @@ O cronograma abaixo foi definido no primeiro dia do desafio.
 ```console
 $ mvn spring-boot:run
 ```
+
+Para acessar a documentação no Swagger e fazer testes na API:
+
+- [Swagger UI](http://localhost:8081/swagger-ui.html)
+
+**1º Passo:** autenticar usuário e senha no endpoint para gerar token (tony.stark e ironman);
+**2º Passo:** copiar token e add Bearer antes, para testar quanlquer outro endpoint;
+**3° Passo:** colar no botão de eutenticação no lado direito da aplicação.
 
 ### FrontEnd:
 
@@ -100,4 +97,6 @@ $ yarn install
 ```console
 $ yarn start
 ```
+
+No front, não consegui manipular o Dom do React para recuperar o login e senha, então a Axios só está funcionando em hardcoded, mas vou corrigir durante o fim de semana.
 
