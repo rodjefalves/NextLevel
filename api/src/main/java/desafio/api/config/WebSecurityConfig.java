@@ -24,7 +24,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     private static final String[] ENDPOINTS_LIBERADOS = {
-            "/api/h2-console/**",
+            "/h2-console/**",
             "/api/autenticar/**",
             "/webjars/**",
             "/v2/api-docs/**",

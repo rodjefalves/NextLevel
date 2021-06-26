@@ -6,6 +6,8 @@ import desafio.api.rest.dto.TokenDTO;
 import desafio.api.security.JwtService;
 import desafio.api.exception.SenhaInvalidaException;
 import desafio.api.service.impl.UsuarioServiceImpl;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,6 +19,7 @@ import org.springframework.web.server.ResponseStatusException;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api")
+@Api( tags = "Usuários")
 public class UsuarioController {
 
     @Autowired
@@ -27,6 +30,7 @@ public class UsuarioController {
 
     @CrossOrigin
     @PostMapping("/autenticar")
+    @ApiOperation("Endpoint para atenticação de usuário (TOKEN JWT)")
     public TokenDTO autenticar(@RequestBody CredenciaisDTO credenciais){
         try{
             Usuario usuario = Usuario.builder()

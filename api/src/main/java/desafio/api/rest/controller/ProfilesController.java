@@ -23,4 +23,11 @@ public class ProfilesController {
     public ProfileDTO buscarUmProfile(@PathVariable(value = "id") Integer id){
         return profileService.buscarUmProfile(id);
     }
+
+    @CrossOrigin
+    @PostMapping("/usuarios/enviar")
+    @ApiOperation("Endpoint responsável por envio dos dados para empresas.")
+    public String enviarDados(Integer idProfile, Integer idEmpresa){
+        return profileService.enviarProfile(idProfile, idEmpresa);
+    }
 }

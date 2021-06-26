@@ -83,7 +83,16 @@ Para acessar a documentação no Swagger e fazer testes na API:
 - [Swagger UI](http://localhost:8081/swagger-ui.html)
 
 **1º Passo:** autenticar usuário e senha no endpoint para gerar token (tony.stark e ironman);
-**2º Passo:** copiar token e add Bearer antes, para testar quanlquer outro endpoint;
+**2º Passo:** copiar token e adicionar Bearer antes, para testar quanlquer outro endpoint. Exemplo de como deve ser o TOKEN:
+
+```
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+```
+
+Local para autenticar:
+
+![Local do Swagger](https://raw.githubusercontent.com/rodjefalves/NextLevel/main/img/localSwagger.png)
+
 **3° Passo:** colar no botão de eutenticação no lado direito da aplicação.
 
 ### FrontEnd:
