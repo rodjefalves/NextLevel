@@ -10,7 +10,7 @@ Baseado no slogan da empresa: **"It's time to raise the bar"**, batizei a aplica
 
 ### Arquitetura:
 
-![Arquitetura](URL da imagem)
+![Arquitetura](https://raw.githubusercontent.com/rodjefalves/NextLevel/main/img/nextlevel.png)
 
 A arquitetura é simples, consiste em um frontend em React e um back em SpringBoot Java que contem API's REST que são responsáveis pela autenticação de usuários e manipulação dos profiles de profissionais e empresas. Informações sobre empresas, usuários (segurança) e profiles estão separados. Optei por utilizar o H2 DataBase aliado ao Liquibase para geração e alimentação das tabelas ao iniciar a aplicação.
 
@@ -34,7 +34,7 @@ A arquitetura é simples, consiste em um frontend em React e um back em SpringBo
 
 #### Endpoints das API's
 
-![Endpoints](URL da imagem)
+![Endpoints]("https://raw.githubusercontent.com/rodjefalves/NextLevel/main/img/endpoints.png")
 
 ### Tecnologias utilizadas:
 
