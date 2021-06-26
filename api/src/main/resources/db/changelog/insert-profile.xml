@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="jeferson" id="1">
+        <insert tableName="profile">
+            <column name="id" valueNumeric="1"/>
+            <column name="nome" value="Anthony Edward Stark"/>
+            <column name="telefone" value="99999999999"/>
+            <column name="email" value="tony.stark@starkindustries.com"/>
+            <column name="data_nascimento" value="29051970"/>
+            <column name="link_foto" value="https://imagens.canaltech.com.br/celebridades/78.400.jpg"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

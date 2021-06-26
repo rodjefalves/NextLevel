@@ -1,0 +1,75 @@
+.containerLogin {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.contentLogin {
+  width: 90vw;
+  max-width: 451px;
+  height: 450px;
+  margin: 0 auto;
+  background-color: #F2F4F9;
+  border-radius: 13px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-content: center;    
+}
+
+.contentLogin h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #0044E9;
+  letter-spacing: -4px;
+  
+}
+
+.formLogin {
+  max-width: 340px;
+  text-align: center;
+}
+
+.formLogin h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  
+}
+
+.inputLogin {
+  margin-top: 2vh;
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  border: 2px solid #e6e7e8;
+  color: #666360;
+  display: flex;
+  
+}
+
+.botaoLogin {
+  background: #0044E9!important;
+  height: 56px;
+  border-radius: 10px;
+  border: 0;
+  padding: 0 16px;
+  color: #fff!important;
+  font-weight: 700;
+  margin-top: 16px;
+  transition: background-color 0.2s;
+  width: 250px;
+}
+
+.botaoLogin:hover {
+  color:  #0044E9!important;
+  background-color: #fff!important;
+  border: 2px solid  #0044E9!important;
+}

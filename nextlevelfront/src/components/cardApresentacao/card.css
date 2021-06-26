@@ -1,0 +1,54 @@
+body{
+    background-color: #F2F4F9!important;
+}
+.containerCard {
+    background-color: #F2F4F9!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contentCard {
+    background-color: #fff!important;
+    max-width: 700px;
+    height: 450px;
+    margin: 0 auto;
+    background-color: #F2F4F9;
+    border-radius: 13px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;    
+  }
+  
+  .contentCard h1 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #0044E9;
+    letter-spacing: -4px;
+    
+  }
+
+  .botaoCard {
+    background: #0044E9!important;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+    padding: 0 16px;
+    color: #fff!important;
+    font-weight: 700;
+    margin-top: 16px;
+    transition: background-color 0.2s;
+    width: 250px;
+  }
+  
+  .botaoCard:hover {
+    color:  #0044E9!important;
+    background-color: #fff!important;
+    border: 2px solid  #0044E9!important;
+  }
